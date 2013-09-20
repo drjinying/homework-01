@@ -1,6 +1,6 @@
 /*
  * Author: Shone JIN, 11061128
- * Sept. 19, 2013. Version 1.0
+ * Sept. 19, 2013. Version 1.1
  */
 
 #include <fstream>
@@ -20,6 +20,7 @@ int min(int *a, int l)
 			tmp = a[l];
 		}
 	}
+	return tmp;
 }
 int sum_max(int * a, int l)
 {
@@ -37,7 +38,6 @@ int sum_max(int * a, int l)
 int main()
 {
 	int array[100];
-	int tmp;
 	int i = 0;
 	
 	ifstream infile("input.txt", ios::in);
